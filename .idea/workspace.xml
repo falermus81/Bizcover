@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b590e34f-5c1c-4f4a-91e0-5cff0b2e8a1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/WebPageExplore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/WebStepExplore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Explore.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/WebPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/WebPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/WebPageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/WebPageBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/WebPageLanding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/WebPageLanding.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/WebPagePool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/WebPagePool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/WebStepLanding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/WebStepLanding.java" afterDir="false" />
-    </list>
+    <list default="true" id="b590e34f-5c1c-4f4a-91e0-5cff0b2e8a1c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
