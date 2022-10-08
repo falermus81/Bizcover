@@ -14,7 +14,7 @@ import java.util.List;
 public class WebPageBase implements WebPage {
     protected WebDriver webDriver;
     private final Actions actions;
-    private final WebDriverWait webDriverWait;
+    protected final WebDriverWait webDriverWait;
 
     public WebPageBase(WebDriver webDriver) {
         this.webDriver = webDriver;
@@ -30,6 +30,18 @@ public class WebPageBase implements WebPage {
             this.webDriverWait.until(ExpectedConditions.elementToBeClickable(webElement));
             this.actions.click(webElement).perform();
             break;
+        }
+    }
+
+    @Override
+    public void click(WebElement webElement) {
+        try {
+            this.actions.click(webElement).perform();
+        }
+        catch (Exception e) {
+            System.out.println(e.getMessage());
+            this.webDriverWait.until(ExpectedConditions.refreshed(ExpectedConditions.stalenessOf(webElement)));
+            this.actions.click(webElement).perform();
         }
     }
 
@@ -55,5 +67,24 @@ public class WebPageBase implements WebPage {
             Assert.assertEquals("The text is incorrect", text, webElement.getText());
             break;
         }
+    }
+
+    @Override
+    public WebElement findElementByTagAndText(String tagName, String text) {
+        List<WebElement> webElements = this.webDriverWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.tagName(tagName)));
+        for (WebElement webElement: webElements) {
+            try {
+                if (webElement.getText().equals(text)) {
+                    return webElement;
+                }
+            }
+            catch (Exception e) {
+                this.webDriverWait.until(ExpectedConditions.elementToBeClickable(webElement));
+                if (webElement.getText().equals(text)) {
+                    return webElement;
+                }
+            }
+        }
+        return null;
     }
 }

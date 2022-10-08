@@ -9,6 +9,7 @@ import pages.WebPageLanding;
 
 import static pages.WebPagePool.webPageLanding;
 import static pages.WebPagePool.webPageArticle;
+import static pages.WebPagePool.webPageExplore;
 
 public class WebStepLanding {
     @Given("The website {string} is opened using Chrome")
@@ -35,5 +36,11 @@ public class WebStepLanding {
     @Then("Suggestion result should be displayed with text {string}")
     public void suggestionResultShouldBeDisplayedWithText(String text) {
         webPageLanding.assertText(webPageLanding.searchSuggestion, text);
+    }
+
+    @When("Explore tab is tapped")
+    public void exploreTabIsTapped() {
+        webPageLanding.click(webPageLanding.findElementByTagAndText("yt-formatted-string", "Explore"));
+        webPageLanding.goToExplore();
     }
 }
