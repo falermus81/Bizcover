@@ -10,4 +10,5 @@ public interface WebPage {
     void assertTitle(String title);
     void assertText(By by, String text);
     WebElement findElementByTagAndText(String tagName, String text);
+    void close();
 }

@@ -79,12 +79,17 @@ public class WebPageBase implements WebPage {
                 }
             }
             catch (Exception e) {
-                this.webDriverWait.until(ExpectedConditions.elementToBeClickable(webElement));
+                this.webDriver.navigate().refresh();
                 if (webElement.getText().equals(text)) {
                     return webElement;
                 }
             }
         }
         return null;
+    }
+
+    @Override
+    public void close() {
+        this.webDriver.close();
     }
 }
