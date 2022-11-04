@@ -1,5 +1,6 @@
 package steps;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -42,5 +43,11 @@ public class WebStepLanding {
     public void exploreTabIsTapped() {
         webPageLanding.click(webPageLanding.findElementByTagAndText("yt-formatted-string", "Explore"));
         webPageLanding.goToExplore();
+    }
+
+    @And("I want to login")
+    public void iWantToLogin() {
+        webPageLanding.click(webPageLanding.login);
+        webPageLanding.goToLogin();
     }
 }

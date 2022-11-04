@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b590e34f-5c1c-4f4a-91e0-5cff0b2e8a1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/WebPageMoodsGenres.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/WebStepMoodsGenres.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/WebPageLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/steps/WebStepLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/WebPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/WebPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/WebPageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/WebPageBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/WebPageExplore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/WebPageExplore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/WebPageLanding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/WebPageLanding.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/WebPagePool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/WebPagePool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/WebStepExplore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/WebStepExplore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Explore.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Explore.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/WebStepLanding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/WebStepLanding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Explore.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Search.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: As a user I can explore music by moods">
+  <component name="RunManager" selected="Cucumber Java.Scenario: As a user I can register using email">
     <configuration name="Scenario: As a user I can explore music by mood and genres" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Explore.feature" />
@@ -103,8 +102,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: As a user I can register using email" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="EfisheryMusic.test" />
+      <option name="NAME_FILTER" value="^As a user I can register using email$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user I can register using email$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: As a user I can register using email" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: As a user I can register using email" />
         <item itemvalue="Cucumber Java.Scenario: As a user I can explore music by moods" />
         <item itemvalue="Cucumber Java.Scenario: As a user I can explore music by mood and genres" />
       </list>

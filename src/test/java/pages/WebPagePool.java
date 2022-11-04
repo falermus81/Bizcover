@@ -5,4 +5,5 @@ public class WebPagePool {
     public static WebPageExplore webPageExplore;
     public static WebPageArticle webPageArticle;
     public static WebPageMoodsGenres webPageMoodsGenres;
+    public static WebPageLogin webPageLogin;
 }

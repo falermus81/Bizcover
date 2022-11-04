@@ -9,6 +9,7 @@ import java.util.List;
 
 import static pages.WebPagePool.webPageArticle;
 import static pages.WebPagePool.webPageExplore;
+import static pages.WebPagePool.webPageLogin;
 
 public class WebPageLanding extends WebPageBase {
     public By searchInput = By.id("searchInput");
@@ -16,6 +17,8 @@ public class WebPageLanding extends WebPageBase {
 
     public By searchSuggestion = By.className("highlight");
     public By tabExplore = By.name("Explore");
+
+    public By login = By.cssSelector("#header > div.nav > div > div > nav > div.header_user_info > a");
     public WebPageLanding(WebDriver webDriver) {
         super(webDriver);
     }
@@ -25,6 +28,9 @@ public class WebPageLanding extends WebPageBase {
     }
     public void goToExplore() {
         webPageExplore = new WebPageExplore(this.webDriver);
+    }
+    public void goToLogin() {
+        webPageLogin = new WebPageLogin(this.webDriver);
     }
 
 }
