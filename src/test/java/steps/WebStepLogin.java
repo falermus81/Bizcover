@@ -9,5 +9,6 @@ public class WebStepLogin {
     public void iTryToRegisterWithEmail(String email) {
         webPageLogin.sendKeys(webPageLogin.emailCreate, email);
         webPageLogin.click(webPageLogin.submitCreate);
+        webPageLogin.goToCreateAccount();
     }
 }
